@@ -1,11 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cristiano Ronaldo</title>
+    <title>Bolão da Copa</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <H1>Titulo</H1>
+    <div class="container">
+        <h1>⚽ Bolão da Copa 2026</h1>
+        
+        <form id="bolaoForm">
+            <input type="hidden" id="palpiteId">
+            <input type="text" id="participante" placeholder="Nome do Participante" required>
+            <input type="text" id="jogo" placeholder="Jogo (Ex: Brasil x França)" required>
+            <input type="text" id="palpite" placeholder="Placar (Ex: 2 x 1)" required>
+            <button type="submit" id="btnSalvar">Salvar Palpite</button>
+        </form>
+
+        <h2>📊 Palpites Cadastrados</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Participante</th>
+                    <th>Jogo</th>
+                    <th>Palpite</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="tabelaPalpites"></tbody>
+        </table>
+    </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
